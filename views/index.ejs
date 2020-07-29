@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvir Abbas Notes</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name=description content="The official website of Tanvir Abbas Notes. Tanvir Abbas is Instructor Auto And Diesel in Govt. College of Technology Railway road Lahore and this website contains all his notes">
+    <meta name="google-site-verification" content="W4gJ16uubfbd0Oru4e-ZUK1VbL1TGvLS8Z0M2XO-ESw" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navBar">
+        <a class="title" href="#">Tanvir Abbas Notes</a>
+       
+    </div>
+    <div id="content">
+        <form id="searchForm" method="POST">
+            <input placeholder="Search For Notes" type="text" name="sQuery">
+            <button type="submit">Search</button>
+        </form>
+        <% result.map(res => {%>
+            <a href="/note/<%=res._id%>">
+            <div class="oneNote">
+                <h2 class="title"><%=res.name%></h2>
+                <p><%=res.topic%></p>
+                <p class="desc"><%=res.desc%></p>
+                <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/forward-512.png" alt="" class="nextButton">
+            </div>
+            </a>
+        <%}) %>
+    </div>
+    <script data-ad-client="ca-pub-5981409429859170" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body>
+
+</html>

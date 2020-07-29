@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title><%=result[0].name%></title>
+    <meta name="google-site-verification" content="W4gJ16uubfbd0Oru4e-ZUK1VbL1TGvLS8Z0M2XO-ESw" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat;
+        }
+
+        #nameinnotes {
+            margin-top: 50px;
+            font-family: 'Open Sans';
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+        #topic {
+            margin-left: 50px;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+
+        .navBar {
+            height: 10vh;
+            background-color: darkcyan;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .navBar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title {
+            font-weight: 700;
+        }
+
+        .navBar div {
+            width: 100%;
+        }
+
+        .navBar div ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .navBar div ul li {
+            list-style: none;
+            text-align: center;
+        }
+
+        iframe {
+            margin-left: 50px;
+            width: 800px;
+            height: 600px;
+        }
+
+        @media screen and (max-width: 920px) {
+            iframe {
+                display: block;
+                width: 80vw;
+                height: 70vh;
+                margin: 0 auto;
+            }
+
+            #nameinnotes {
+                margin-left: 0;
+                margin-top: 50px;
+                font-family: 'Open Sans';
+                font-size: 30px;
+                text-align: center;
+            }
+
+            #topic {
+                font-family: 'Open Sans';
+                font-size: 16px;
+                text-align: center;
+                margin-left: 0;
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navBar">
+        <a class="title" href="/">Tanvir Abbas Notes</a>
+    </div>
+    <h2 id="nameinnotes"><%=result[0].name%></h2>
+    <p id="topic"><%=result[0].topic%></p>
+    <iframe src="<%=result[0].notesUrl%>" width="800" height="600"></iframe>
+    <script data-ad-client="ca-pub-5981409429859170" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</body>
+
+</html>

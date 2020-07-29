@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        div{
+            font-family: 'Open Sans';
+            margin: 0 auto;
+            width:300px;
+            background: linear-gradient(to top right, #007e69,#00d1ae);
+            border-radius: 10px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: #23232336 0 0 40px;
+            padding: 30px;
+        }
+        form {
+            display: block;
+            margin: 0 auto;
+            width: max-content;
+        }
+        h2{
+            text-align: center;
+            margin: 0;
+        }
+        form input{
+            display: block;
+            margin: 0 auto;
+            padding: 15px;
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #797979;
+            border-radius: 200px;
+        }
+        form button{
+            display: block;
+            margin: 0 auto;
+            border: none;
+            padding: 15px;
+            width: 200px;
+            border-radius: 200px;
+            background: transparent;
+            color: #fff;
+            border: #fff 1px solid;
+            cursor: pointer;
+            transition: all .1s ease-in;
+        }
+        form button:hover{
+            background-color: #fff;
+            color: #00d1ae;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Add Notes</h2>
+        <form method="POST">
+            <input type="text" placeholder="Enter the name of the notes" name="notesName">
+            <input type="text" name="category" placeholder="Enter the category">
+            <input type="text" placeholder="Enter the notes link" name="notesUrl">
+            <input type="text" placeholder="Enter the description" name="decs">
+            <button type="submit">Add Notes</button>
+        </form>
+    </div>
+</body>
+
+</html>
